@@ -6,13 +6,13 @@ A description of this application can be found at https://blog.skymind.ai/p/5dac
 
 This repository contains three files.
 
-1. Fraud Autoencoder.json - An importable Zeppelin notebook containing Python code to train an Autoencoder. 
-2. Fraud MLP.json - An importable Zeppelin notebook containing Python code to train a Multilayer Perceptron. 
-3. skil_anomaly_detection_python_app.zip - Client API to query the deployed Multilayer Perceptron model in SKIL. 
+1. *Fraud Autoencoder.json* - An importable Zeppelin notebook containing Python code to train an Autoencoder. 
+2. *Fraud MLP.json* - An importable Zeppelin notebook containing Python code to train a Multilayer Perceptron. 
+3. *skil_anomaly_detection_python_app.zip* - Client API to query the deployed Multilayer Perceptron model in SKIL. 
 
 ## Client API Instructions 
 
-skil_anomaly_detection_python_app.zip contains a client API to query the Multilayer Perceptron model in SKIL. 
+*skil_anomaly_detection_python_app.zip* contains a client API to query the Multilayer Perceptron model in SKIL. 
 
 1. Unzip skil_anomaly_detection_python_app.zip.
 2. Run `mvn package` using the terminal within the client_app subdirectory to obtain the JAR file.
