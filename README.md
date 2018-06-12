@@ -17,3 +17,12 @@ This repository contains three files.
 1. Unzip skil_anomaly_detection_python_app.zip.
 2. Run `mvn package` using the terminal within the client_app subdirectory to obtain the JAR file.
 3. Type `java -jar skil-example-anomaly-detection-1.0.0.jar --feature fraud.csv --endpoint http://localhost:9008/endpoints/test/model/anomaly-detection/default/` to query the model and obtain a prediction (fraud or not).
+
+## Methodology
+
+Autoencoder
+- Only train on "normal" or "not fraudulent" transaction to build a profile of normal activity.
+- Flag items that deviate from normal. 
+
+MLP
+- Scaled between 0 and 1
