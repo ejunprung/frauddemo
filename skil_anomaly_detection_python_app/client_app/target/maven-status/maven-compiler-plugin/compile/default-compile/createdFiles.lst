@@ -1,7 +1,0 @@
-ai/skymind/skil/examples/anomalydetection/modelserver/inference/model/Inference$Response.class
-ai/skymind/skil/examples/anomalydetection/modelserver/auth/Authorization.class
-ai/skymind/skil/examples/anomalydetection/modelserver/inference/AnomalyDetectionModelServerExample.class
-ai/skymind/skil/examples/anomalydetection/modelserver/inference/model/Inference$Response$Classify.class
-ai/skymind/skil/examples/anomalydetection/modelserver/inference/model/Inference$Response$MultiClassify.class
-ai/skymind/skil/examples/anomalydetection/modelserver/inference/model/Inference$Request.class
-ai/skymind/skil/examples/anomalydetection/modelserver/inference/model/Inference.class
