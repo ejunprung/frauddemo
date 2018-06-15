@@ -29,7 +29,7 @@ In order for our machine learning models to process the data, we need to transfo
 | ----- |:--------------------:|
 |  *step, isFraud, isFlaggedFraud* | Convert from integers to floats |
 |  *type, nameOrig, nameDest* | Convert from strings to categorical values to floats |
-|  *amount, oldbalanceOrig, newbalanceOrig, oldbalanceDest, newbalanceDest* | Already float. No conversion necessary. |
+|  *amount, oldbalanceOrig, newbalanceOrig, oldbalanceDest, newbalanceDest* | Already floats. No conversion necessary. |
 
 Now that our data is properly transformed, we scale all values between 0 and 1 to suppress the impact of outliers.
 
@@ -41,9 +41,4 @@ An MLP is a supervised deep learning model intended to perform binary classifica
 
 ### Autoencoder
 
-An autoencoder is an unsupervised deep learning model intended to learn structure in the data. Assuming that fraudulent transactions are inherently different than normal transactions, we can teach an autoencoder to learn wh
-
-
-The idea is to train an autoencoder using only transactions labeled as normal. In this way, we teach an autoencoder what *normal* looks like and compare that to a fraudulent transaction.
-
-An unsupervised approach tends to perform much worse, but it is very good at catching novel items (unknown unknowns) which are near impossible to proactively detect.
+An autoencoder is an unsupervised deep learning model which can infer patterns within data without reference to known, or labeled, outcomes. This is important because we can teach an autoencder to learn what a normal transaction looks like and compare that to a fraudulent transaction to determine if it's fraudulent. An unsupervised approach tends to perform much worse, but it is very good at catching novel items (unknown unknowns) which are near impossible to proactively detect.
