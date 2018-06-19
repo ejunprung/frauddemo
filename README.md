@@ -39,17 +39,13 @@ Now that our data is properly transformed, we scale all values between 0 and 1 t
 
 An MLP is a *supervised deep learning model* intended to perform binary classification such as `fraud` or `not fraud`. Because we have a relatively large labeled dataset, we can teach an MLP to learn the differences between a `known` fraudulent and a `known` normal transaction. A supervised approach tends to perform very well on well-established and known items of interest.
 
-We train our MLP over 3 epochs with a batch size of 16. Further training could improve the results, but there are diminishing returns.
-
 ### Autoencoder
 
-An autoencoder is an *unsupervised deep learning model* which can learn patterns within data without reference to known, or labeled, outcomes. This is important because we can teach an autoencder to learn what a normal transaction looks like and compare that to a fraudulent transaction to determine if it's fraudulent
+An autoencoder is an *unsupervised deep learning model* which can learn patterns within data without reference to known, or labeled, outcomes. This is valuable because we can teach an autoencoder to measure differences between normal and fraudulent transactions.
 
-This quite useful for two reasons:
+Autoencoders are quite useful for two reasons:
 
 1. A labeled dataset is not required.
-2. Autoencoders output an evaluation metric called reconstruction error. This metric is an objective baseline in which we can measure how anomalous a transaction appears.
+2. Autoencoders output an evaluation metric called reconstruction error. This metric is an objective baseline in which we can measure how far a transaction deviates from normal activity and thus, determine if it requires further scrutiny.
 
 An unsupervised approach tends to perform much worse, but it is very good at catching novel items (unknown unknowns) which are near impossible to proactively detect.
-
-We train our autoencoder over 100 epochs with a batch size of 16.
